@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>com.outofmemory.entertainment.dissemination</id>
   <name>Dissemination: 2d ASCII game</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor email="root@outofmemory-entertainment.com" url="http://outofmemory-entertainment.com">OutOfMemory Entertainment</vendor>
 
   <description><![CDATA[

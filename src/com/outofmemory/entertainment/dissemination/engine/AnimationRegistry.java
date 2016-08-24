@@ -9,6 +9,7 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -29,8 +30,7 @@ public class AnimationRegistry {
     }
 
     public void parse(String fileName) {
-        ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource(fileName).getFile());
+        InputStream file = getClass().getResourceAsStream("/" + fileName);
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
         try {
@@ -51,7 +51,7 @@ public class AnimationRegistry {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            throw new RuntimeException("Exception occured during parsing " + fileName);
+            throw new RuntimeException("Exception occured during parsing " + fileName, e);
         }
 
     }
