@@ -1,0 +1,49 @@
+<idea-plugin version="2">
+  <id>com.outofmemory.entertainment.dissemination</id>
+  <name>Dissemination: 2d ASCII game</name>
+  <version>1.0</version>
+  <vendor email="root@outofmemory-entertainment.com" url="http://outofmemory-entertainment.com">OutOfMemory Entertainment</vendor>
+
+  <description><![CDATA[
+      when programmer closes IDE, the secret life of computer program begins: binary goo starts to grow in dirty code and if nobody takes an action, it will eventually spawn bugs. Here comes the code guardian. With his weapon he fights the goo to keep code clean, but every time fails: bugs are inevitable
+      <br /><br />
+      use "Tools | Play Dissemination" action to launch the game
+      <br /><br />
+      !!!do not play the game in files with uncommitted changes!!!
+    ]]></description>
+
+  <change-notes><![CDATA[
+
+    ]]>
+  </change-notes>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+
+  <depends>com.intellij.modules.lang</depends>
+
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+
+    <action id="com.outofmemory.entertainment.dissemination.PlayDisseminationAction" class="com.outofmemory.entertainment.dissemination.PlayDisseminationAction" text="Play Dissemination">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <object id="bullet">
+        <animation id="bullet-right">
+            <frame>
+                <row>>>></row>
+            </frame>
+        </animation>
+        <animation id="bullet-left" symmetric="bullet-right"/>
+    </object>
+</root>

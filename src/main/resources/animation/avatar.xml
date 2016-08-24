@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <object id="avatar">
+        <animation id="idle">
+            <frame>
+                <row> ______ </row>
+                <row>| '  ' |</row>
+                <row>|  __  |</row>
+                <row>|______|</row>
+                <row> /|  |\ </row>
+                <row>/ |__| \</row>
+                <row> _/  \_ </row>
+            </frame>
+        </animation>
+        <animation id="idle-right">
+            <frame>
+                <row> ______ </row>
+                <row>| '  ' |</row>
+                <row>|  __  |</row>
+                <row>|______|</row>
+                <row> /|  |\ </row>
+                <row>/ |__| \</row>
+                <row>  /_ \_ </row>
+            </frame>
+        </animation>
+        <animation id="idle-left" symmetric="idle-right"/>
+        <animation id="walk-right" times="8">
+            <frame>
+                <row> ______ </row>
+                <row>| '  ' |</row>
+                <row>|  __  |</row>
+                <row>|______|</row>
+                <row> /|  |\ </row>
+                <row>/ |__| \</row>
+                <row>  /_ \_ </row>
+            </frame>
+            <frame>
+                <row> ______ </row>
+                <row>| '  ' |</row>
+                <row>|  __  |</row>
+                <row>|______|</row>
+                <row> /|  |\ </row>
+                <row>/ |__| \</row>
+                <row>  |_ |_ </row>
+            </frame>
+        </animation>
+        <animation id="walk-left" symmetric="walk-right"/>
+        <animation id="die" times="4">
+            <frame>
+              <row>  ______  </row>
+              <row> | O  O | </row>
+              <row> |  __  | </row>
+              <row> |______| </row>
+              <row>__/|  |\__</row>
+              <row>   |__|   </row>
+              <row>  _/  \_  </row>
+            </frame>
+            <frame>
+              <row>  ______  </row>
+              <row> | *  * | </row>
+              <row> |  __  | </row>
+              <row> |______| </row>
+              <row>__/|  |\__</row>
+              <row>   |__|   </row>
+              <row>  _/  \_  </row>
+            </frame>
+            <frame>
+              <row>          </row>
+              <row>          </row>
+              <row>          </row>
+              <row>          </row>
+              <row>          </row>
+              <row>          </row>
+              <row>          </row>
+            </frame>
+        </animation>
+    </object>
+</root>
