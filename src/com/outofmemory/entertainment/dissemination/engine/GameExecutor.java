@@ -48,7 +48,8 @@ public class GameExecutor {
                 "com.outofmemory.entertainment.dissemination",
                 "<b>Dissemination</b>",
                 "<b>If you like playing it, " +
-                        "you may like <a href=\"https://outofmemory-entertainment.com/games\">other our games</a></b>",
+                        "you may like <a href=\"https://outofmemory-entertainment.com/games" +
+                        "?utm_campaign=plugin&utm_medium=idea&utm_source=popup\">other our games</a></b>",
                 NotificationType.INFORMATION,
                 new NotificationListener.UrlOpeningListener(true)));
     }
